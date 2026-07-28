@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echoes & Horizons — Growing Older Across Cultures</title>
+  <meta name="description" content="An international youth project exploring age, intergenerational wisdom, and growing older across cultures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-dot"></span>
+        Echoes & Horizons
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#podcast">Podcast</a></li>
+        <li><a href="#voices">Voices</a></li>
+        <li><a href="#interview">Interview</a></li>
+        <li><a href="#capsule">Capsule</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-content">
+      <span class="pill">TELE · Ethnic Leadership</span>
+      <h1>Stories we grow<br>into — and out of.</h1>
+      <p class="hero-sub">Five teenagers. Different countries. One question: what does “growing older” actually mean across cultures?</p>
+      <div class="hero-actions">
+        <a href="#podcast" class="btn btn-fill">Listen to the episode</a>
+        <a href="#capsule" class="btn btn-ghost">Leave a message →</a>
+      </div>
+      <div class="hero-meta">
+        <span>🇦🇲 Armenia</span>
+        <span>🇺🇸 USA</span>
+        <span>🇲🇦 Morocco</span>
+        <span>+ more</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="podcast">
+    <div class="container">
+      <div class="section-top">
+        <span class="pill soft">01 · Audio</span>
+        <h2>The podcast</h2>
+        <p class="lead">8–12 minutes of reflections, questions, and one conversation with someone who has spent years with older adults.</p>
+      </div>
+
+      <div class="player-card">
+        <div class="player-art" id="playerArtwork">
+          <div class="player-wave" id="waveform"></div>
+          <span class="player-play" id="playIcon">▶</span>
+        </div>
+        <div class="player-body">
+          <h3>Echoes & Horizons — Full Episode</h3>
+          <p class="muted">Coming soon · English · 8–12 min</p>
+          <div class="progress" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <div class="time-row">
+            <span id="currentTime">0:00</span>
+            <span id="duration">—:—</span>
+          </div>
+          <div class="player-btns">
+            <button class="btn btn-fill sm" id="playBtn">Play</button>
+            <button class="btn btn-ghost sm" id="rewindBtn">−15s</button>
+            <button class="btn btn-ghost sm" id="forwardBtn">+15s</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid five">
+        <article class="story-card">
+          <div class="card-avatar">A</div>
+          <h4>Anush</h4>
+          <span class="tag">Armenia</span>
+          <p>“I used to think growing older meant losing the ability to dream. Now I’m not so sure…”</p>
+          <span class="card-hint">Reflection · 2–3 min</span>
+        </article>
+        <article class="story-card">
+          <div class="card-avatar">N</div>
+          <h4>Nikol</h4>
+          <span class="tag">—</span>
+          <p>Team reflection placeholder. Record async and drop the clip here.</p>
+          <span class="card-hint">Coming soon</span>
+        </article>
+        <article class="story-card">
+          <div class="card-avatar">R</div>
+          <h4>Rania</h4>
+          <span class="tag">Morocco</span>
+          <p>Team reflection placeholder.</p>
+          <span class="card-hint">Coming soon</span>
+        </article>
+        <article class="story-card">
+          <div class="card-avatar">J</div>
+          <h4>Julianne</h4>
+          <span class="tag">USA / CA</span>
+          <p>Team reflection placeholder.</p>
+          <span class="card-hint">Coming soon</span>
+        </article>
+        <article class="story-card">
+          <div class="card-avatar">D</div>
+          <h4>Dashana</h4>
+          <span class="tag">—</span>
+          <p>Team reflection placeholder.</p>
+          <span class="card-hint">Coming soon</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="voices">
+    <div class="container">
+      <div class="section-top">
+        <span class="pill soft">02 · Comparison</span>
+        <h2>Voices across cultures</h2>
+        <p class="lead">How different places mark time, pass things down, and decide what “older” even means. Tap a card.</p>
+      </div>
+
+      <div class="voices-grid">
+        <button class="voice-card" data-voice="1">
+          <span class="voice-num">01</span>
+          <h3>Rites & Recognition</h3>
+          <p>How do we mark becoming “older”?</p>
+          <span class="voice-arrow">→</span>
+        </button>
+        <button class="voice-card" data-voice="2">
+          <span class="voice-num">02</span>
+          <h3>What Gets Passed Down</h3>
+          <p>Wisdom, objects, stories — or silence?</p>
+          <span class="voice-arrow">→</span>
+        </button>
+        <button class="voice-card" data-voice="3">
+          <span class="voice-num">03</span>
+          <h3>Growing Older vs Growing Up</h3>
+          <p>Is it about age, or about responsibility?</p>
+          <span class="voice-arrow">→</span>
+        </button>
+      </div>
+
+      <div class="voice-panel" id="voicePanel" hidden>
+        <button class="panel-close" id="panelClose">✕</button>
+        <div id="panelContent"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="interview">
+    <div class="container">
+      <div class="section-top">
+        <span class="pill soft">03 · Guest</span>
+        <h2>Interview highlights</h2>
+        <p class="lead">Key moments from the conversation. Replace these once you’ve recorded and transcribed.</p>
+      </div>
+
+      <div class="interview-layout">
+        <div class="guest-card">
+          <div class="guest-photo">Photo</div>
+          <h3>Guest Name</h3>
+          <p class="muted">Expert · Working with older adults</p>
+          <p class="guest-bio">Short bio goes here — e.g. Alzheimer’s Care Armenia, community programs, intergenerational work.</p>
+          <a href="#capsule" class="btn btn-ghost sm">Message the capsule →</a>
+        </div>
+        <div class="highlight-stack">
+          <article class="highlight-card">
+            <span class="tag coral">00:00</span>
+            <h4>On the quiet shift</h4>
+            <p>“Most people don’t wake up one day and decide they can no longer dream. It happens slowly, almost politely…”</p>
+          </article>
+          <article class="highlight-card">
+            <span class="tag coral">00:00</span>
+            <h4>Culture or universal?</h4>
+            <p>Placeholder for whether the “realistic” turn is shaped more by culture, economics, or something deeper.</p>
+          </article>
+          <article class="highlight-card">
+            <span class="tag coral">00:00</span>
+            <h4>What still surprises them</h4>
+            <p>Placeholder for a story or insight that changed how we see ageing.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="capsule">
+    <div class="container">
+      <div class="section-top">
+        <span class="pill soft">04 · Interactive</span>
+        <h2>Time capsule</h2>
+        <p class="lead">Leave a short note for your future self — or for someone older or younger. Saved only in your browser.</p>
+      </div>
+
+      <div class="capsule-wrap">
+        <form class="capsule-form" id="capsuleForm">
+          <label>Name <span class="opt">(optional)</span></label>
+          <input type="text" id="capsuleName" placeholder="Anonymous is fine" maxlength="40">
+
+          <label>Addressed to</label>
+          <div class="chip-row" id="toChips">
+            <button type="button" class="chip active" data-value="future-self">Future self</button>
+            <button type="button" class="chip" data-value="younger">Someone younger</button>
+            <button type="button" class="chip" data-value="older">Someone older</button>
+            <button type="button" class="chip" data-value="community">Our community</button>
+          </div>
+          <input type="hidden" id="capsuleTo" value="future-self">
+
+          <label>Message</label>
+          <textarea id="capsuleMessage" rows="4" maxlength="280" placeholder="What do you hope you’ll still remember, still try, still protect?"></textarea>
+          <div class="char-count"><span id="charCount">0</span>/280</div>
+
+          <button type="submit" class="btn btn-fill">Seal it in ✨</button>
+        </form>
+
+        <div class="capsule-list">
+          <h3>In this browser</h3>
+          <div id="messagesList">
+            <p class="empty">No messages yet. Be the first.</p>
+          </div>
+          <button type="button" class="btn btn-ghost sm" id="clearCapsule">Clear local messages</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-top">
+        <span class="pill soft">05 · People</span>
+        <h2>The team</h2>
+        <p class="lead">Five teenagers, different time zones, one Slack channel.</p>
+      </div>
+
+      <div class="card-grid five">
+        <article class="story-card team">
+          <div class="card-avatar big">A</div>
+          <h4>Anush</h4>
+          <span class="tag">Armenia</span>
+          <p class="role">Project lead · Web & concept</p>
+        </article>
+        <article class="story-card team">
+          <div class="card-avatar big">N</div>
+          <h4>Nikol</h4>
+          <span class="tag">—</span>
+          <p class="role">—</p>
+        </article>
+        <article class="story-card team">
+          <div class="card-avatar big">R</div>
+          <h4>Rania</h4>
+          <span class="tag">Morocco</span>
+          <p class="role">—</p>
+        </article>
+        <article class="story-card team">
+          <div class="card-avatar big">J</div>
+          <h4>Julianne</h4>
+          <span class="tag">USA / CA</span>
+          <p class="role">—</p>
+        </article>
+        <article class="story-card team">
+          <div class="card-avatar big">D</div>
+          <h4>Dashana</h4>
+          <span class="tag">—</span>
+          <p class="role">—</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Echoes & Horizons</strong>
+        <p>A TELE / Ethnic Leadership student project. Built across time zones for intergenerational curiosity.</p>
+      </div>
+      <div>
+        <p>Static · Interactive · GitHub Pages ready</p>
+        <p class="tiny">Swap placeholders for real audio, photos & quotes when you’re ready.</p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Echoes & Horizons team</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
